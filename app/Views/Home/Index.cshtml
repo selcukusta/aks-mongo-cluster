@@ -1,0 +1,17 @@
+﻿@model IList<OpenHackApp.Models.User>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Users</h2>
+        <ul>
+            @foreach(var item in Model)
+            {
+                <li>@item.Name</li>
+            }
+        </ul>
+    </div>
+</div>
